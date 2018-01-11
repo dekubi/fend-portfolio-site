@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kubi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
+    <!-- css normalizing -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- awesome-fonts -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my css styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- dependencies scripts -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- my js scripts -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+  
+    <main class="container">
+        <header class="row">
+            <div class="col-xs-2 col-sm-3">
+                <img class="img-circle title-logo" src="img/kblogo.png" alt="Kubi logo">
+            </div>
+            <div class="col-xs-12 col-sm-9 text-right text-uppercase">
+                <h1 class="title-super text-thin">Kubi Benjamin</h1>
+                <h4 class="title-sub">Front-end ninja</h4>
+            </div>
+        </header>
+        <section class="row">
+            <div class="col-sm-12">
+                <hr>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-sm-12">
+                <img class="img-responsive center-block" src="img/portfolio_featured950x400.jpg" alt="main image">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-sm-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
+        </section>
+        <section class="row text-center">
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive center-block" src="img/arcade-game_small.jpg" data-toggle="modal" data-target="#arcadeModal" alt="Arcade Game image">
+                <h3 class="project-name text-uppercase">Arcade Game</h3>
+                <p class="text-muted">
+                    <a class="link-featured" href="https://github.com/dekubi/my-first-blog"
+                    role="button">https://github.com/dekubi/arcade-game</a>
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive center-block" src="img/neighborhood-map_small.jpg" data-toggle="modal" data-target="#mapModal" alt="Neighborhood Map image">
+                <h3 class="project-name text-uppercase">Neighborhood Map</h3>
+                <p class="text-muted">
+                    <a class="link-featured" href="https://github.com/dekubi/neighborhood-map"
+                    role="button">https://github.com/dekubi/neighborhood-map</a>
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img class="img-responsive center-block" src="img/website-optimization_small.jpg" data-toggle="modal" data-target="#optimizationModal" alt="Website Optimization image">
+                <h3 class="project-name text-uppercase">Website Optimization</h3>
+                <p class="text-muted">
+                    <a class="link-featured" href="https://github.com/dekubi/website-optimization" 
+                    role="button">https://github.com/dekubi/website-optimization</a>
+                </p>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-sm-12">
+                <hr>
+            </div>
+        </section>
+        <footer class="row">
+            <div class="col-sm-12">
+                <p class="text-center">Build with love <i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- start arcade-game modal -->
+    <div class="modal fade" id="arcadeModal" tabindex="-1" role="dialog" aria-labelledby="arcadeModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h3 class="modal-title" id="arcadeModalTitle">Arcade Game</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive" src="img/arcade-game_small.jpg" alt="arcade game modal image">
+                    </p>
+                    <p>
+                        Arcade game for project 3 of Udacity's Front-End Web Development Nanodegree.
+                        It is an HTML 5 Canvas powered game created with a game engine and visual 
+                        assets provided by Udacity.
+                    </p>
+                    <p>Take a look at the <a class="link-modal" href="https://github.com/dekubi/arcade-game">GitHub repo</a></p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start neighborhood map modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h3 class="modal-title" id="mapModalTitle">Neighborhood Map</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                    <!-- modal body -->
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive" src="img/neighborhood-map_small.jpg" alt="Neighborhood Map modal image">
+                    </p>
+                    <p>
+                        Neighborhood Map is a project for Udacity's Front-End Web Developer Nanodegree.
+                        For this project, I choose to either use Knockout or Angular or Ember along with 
+                        the Google Maps API to complete the project.
+                    </p>
+                    <p>Take a look at the <a class="link-modal" href="https://github.com/dekubi/neighborhood-map">GitHub repo</a></p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- start Website Optimization modal -->
+    <div class="modal fade" id="optimizationModal" tabindex="-1" role="dialog" aria-labelledby="optimizationModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h3 class="modal-title" id="optimizationModalTitle">Website Optimization</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive" src="img/optimization_modal.jpg" alt="Website Optimization modal image">
+                    </p>
+                    <p>
+                        Website Optimization is a project for Udacity's Front-End Web Development Nanodegree.
+                        I am to improved PageSpeed Insights speed score on a portfolio page provided by Udacity.
+                    </p>
+                    <p>Take a look at the <a class="link-modal" href="https://github.com/dekubi/website-optimization">GitHub repo</a></p>
+                </div>
+                    <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
