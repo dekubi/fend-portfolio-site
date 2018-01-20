@@ -35,17 +35,8 @@ a:link {
 
 
  @media screen and (max-width: 768px) {
-     .title-super {
-        font-size: 3em;
-    }
-
-    .title-sub {
-        font-size: 1em;
-    }
-
-
     .link-featured {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 }
 
@@ -60,7 +51,7 @@ a:link {
     }
 
     .project-name {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .link-featured {
